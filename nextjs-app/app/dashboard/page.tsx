@@ -3,7 +3,7 @@
 export default function Page() {
     return (
         <main>
-            <p>Some Text</p>
+            <p>Dashboard Page</p>
         </main>
     )
 }

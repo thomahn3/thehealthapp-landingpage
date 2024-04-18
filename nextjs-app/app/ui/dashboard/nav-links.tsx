@@ -1,5 +1,5 @@
+'use client';
 {/* The liks for all the pages in the application */}
-'use clinet' ;
 
 import {
    RectangleGroupIcon,
