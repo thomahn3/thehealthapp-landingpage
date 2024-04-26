@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Logo from "./ui/logo";
 import Subscribe from "./ui/subscribe";
 
