@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Logo from "./ui/logo";
+import Subscribe from "./ui/subscribe";
 
 export default function Home() {
   return (
@@ -16,9 +17,13 @@ export default function Home() {
     <div className="absolute inset-0 flex flex-col justify-center items-center w-5/6 max-w-lg mx-auto text-center">
    
       <div className="space-y-8">
-        <h1 className="text-white">
-         
+        <h1 className="font-primary font-extrabold text-white sm:text-4xl md:text-5xl md:leading-tight">
+         Your <span className="text-red-400">health</span> in one place.
         </h1>
+        <p className="text-white">
+          Never use more than one app ever again. 
+        </p>
+        <Subscribe />
       </div>
     </div>
     </div>
