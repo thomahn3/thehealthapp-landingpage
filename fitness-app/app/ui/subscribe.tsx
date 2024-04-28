@@ -1,31 +1,23 @@
 'use client';
 
 import { useState } from "react";
-
+import clsx from "clsx";
 
 
 export default function Subscribe() {
     const [email, setEmail] = useState('')
+    const [clicked, setClicked] = useState(false)
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement> ) {
         e.preventDefault()
-        try {
-            const response = await fetch('/api/update-notion', {
-                method: 'POST',
-                headers: {
-                    'Content-type': 'application/json',
-                },
-                body: JSON.stringify({ email }),
-            });
-            if (!response.ok) {
-                throw new Error('Failed to subscribe'); // Handle non-200 status codes
-            }
-            // If successful, reset the email input
-            setEmail('');
-        } catch (error) {
-            console.error('Error:', error);
-            // Handle errors here, such as displaying an error message to the user
-        }
+        setClicked(true)
+        await fetch('api/update-notion', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        })
     }
     return (
         <form 
@@ -46,6 +38,7 @@ export default function Subscribe() {
             >
                 Subscribe
             </button>
+            
         </form>
     );
 }
