@@ -1,7 +1,12 @@
+'use client';
+
 import Logo from "./ui/logo";
 import Subscribe from "./ui/subscribe";
+import { useState } from "react";
 
 export default function Home() {
+  const [subscribed, setSubscribed] = useState(false)
+
   return (
    <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-screen w-screen'>
     <img 
@@ -13,8 +18,14 @@ export default function Home() {
     <div className="absolute flex justify-center items-center w-screen py-4">
       <Logo />
     </div>
+    
+    # Div to center elemnts on the webpage
     <div className="absolute inset-0 flex flex-col justify-center items-center w-5/6 max-w-lg mx-auto text-center">
-   
+      {subscribed ? ( // determining the boolean of the variable and outputing the html based on the queary - true first then flase
+        <h1 className="font-primary font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-snug">
+         Thank you for subscribing to the future of <span className="text-red-400">health.</span>
+      </h1>
+      ) : (
       <div className="space-y-8">
         <h1 className="font-primary font-extrabold text-white sm:text-4xl md:text-5xl md:leading-tight">
          Your <span className="text-red-400">health</span> in one place.
@@ -22,9 +33,17 @@ export default function Home() {
         <p className="text-white font-secondary font-bold">
           Never use more than one app ever again. 
         </p>
-        <Subscribe />
+        <Subscribe setSubscribed={setSubscribed} />
       </div>
+      )}
+      <div className="space-y-8">
+        <h1 className="text-white">
+          Want to Read more?
+        </h1>
+      </div>
+
     </div>
+    
     </div>
   );
 }

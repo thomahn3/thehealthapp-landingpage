@@ -4,7 +4,7 @@ import { useState } from "react";
 import clsx from "clsx";
 
 
-export default function Subscribe() {
+export default function Subscribe({ setSubscribed }: {setSubscribed: any}) {
     const [email, setEmail] = useState('')
     const [clicked, setClicked] = useState(false)
 
@@ -18,6 +18,7 @@ export default function Subscribe() {
             },
             body: JSON.stringify({ email }),
         })
+        setSubscribed(true)
     }
     return (
         <form 
