@@ -5,7 +5,7 @@ const notion = new Client({
   auth: `${process.env.MY_NOTION_TOKEN}`,
 });
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse,) {
   try {
     // Ensure the request method is POST
     if (req.method !== 'POST') {
