@@ -26,7 +26,7 @@ export default function Home() {
       </h1>
       ) : (
       <div className="space-y-8">
-        <h1 className="font-primary font-extrabold text-white sm:text-4xl md:text-5xl md:leading-tight">
+        <h1 className="font-primary font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-tight">
          Your <span className="text-red-400">health</span> in one place.
         </h1>
         <p className="text-white font-secondary font-bold">
