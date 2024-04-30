@@ -50,7 +50,7 @@ export default function Subscribe({ setSubscribed }: { setSubscribed: any }) {
           onSubmit={handleSubmit}
         >
           <input
-            className="font-secondary px-1 border border-r-0 rounded-l-lg w-2/3 focus:outline-none focus:ring-1 focus:ring-red-400"
+            className="font-secondary px-1 border border-r-0 rounded-l-lg rounded-r-none w-2/3 focus:outline-none focus:ring-1 focus:ring-red-400"
             required
             placeholder="Your email here"
             onChange={(e) => setEmail(e.target.value)}
