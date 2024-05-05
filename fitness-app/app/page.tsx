@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
     images: [
       {
-        url: "https://dminhvu.com/images/home/thumbnail.png",
+        url: "",
         width: 1200,
         height: 630,
         alt: "dminhvu"

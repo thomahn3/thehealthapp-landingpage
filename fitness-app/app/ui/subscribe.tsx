@@ -31,7 +31,7 @@ export default function Subscribe({ setSubscribe }: { setSubscribe: any}) {
         return;
       }
 
-      setSubscribe(false)
+      setSubscribe(true)
       setError('');
     } catch (err) {
       if (err instanceof z.ZodError) {

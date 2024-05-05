@@ -4,7 +4,7 @@ import Subscribe from "./subscribe";
 import { useState } from "react";
 
 export default function UpdateUI() {
-    const [subscribe, setSubscribe] = useState(true)
+    const [subscribe, setSubscribe] = useState(false)
 
     return (
      <>
