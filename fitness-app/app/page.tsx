@@ -1,15 +1,59 @@
-'use client';
-
 import Logo from "./ui/logo";
-import Subscribe from "./ui/subscribe";
-import { useState } from "react";
 import Image from "next/image";
 import xlogo from '@/public/xlogo.svg'
 import redditlogo from '@/public/redditlogo.svg'
-import BackgroundImage from "./ui/random-background";
+import BackgroundImage from "./ui/randomBackground";
+import UpdateUI from "./ui/updateUI";
+import { Metadata } from "next";
+ 
+export const metadata: Metadata = {
+  title: "The Health App | Landing Page",
+  description:
+    'A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.',
+  keywords: [
+    'health',
+    'app',
+    'startup',
+    'fitness',
+    'wellbeing',
+  ],
+  openGraph: {
+    url: "https://thehealthapp.vercel.app/",
+    type: "website",
+    title: "The Health App | Landing Page",
+    description:
+      "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
+    images: [
+      {
+        url: "https://dminhvu.com/images/home/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "dminhvu"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
+    description:
+      "dminhvu.com - Programming blog for everyone to learn Elastic Stack, Next.js, Python, JavaScript, React, Machine Learning, Data Science, and more.",
+    creator: "@dminhvu02",
+    site: "@dminhvu02",
+    images: [
+      {
+        url: "https://dminhvu.com/images/home/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "dminhvu"
+      }
+    ]
+  },
+  alternates: {
+    canonical: "https://dminhvu.com"
+  }
+};
 
 export default function Home() {
-  const [subscribed, setSubscribed] = useState(false)
 
   return (
    <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-screen w-screen'>
@@ -18,23 +62,8 @@ export default function Home() {
     <div className="absolute flex justify-center items-center w-screen py-4">
       <Logo />
     </div>
-    
     <div className="absolute inset-0 flex flex-col justify-center items-center w-5/6 max-w-lg mx-auto text-center space-y-8">
-      {subscribed ? ( // determining the boolean of the variable and outputing the html based on the queary - true first then flase
-        <h1 className="font-primary font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-snug">
-         Thank you for subscribing to the future of <span className="text-red-400">health.</span>
-      </h1>
-      ) : (
-      <div className="space-y-8">
-        <h1 className="font-primary font-extrabold text-white text-3xl sm:text-4xl md:text-5xl md:leading-tight">
-         Your <span className="text-red-400">health</span> in one place.
-        </h1>
-        <p className="text-white font-secondary font-bold">
-          Never use more than one app ever again. 
-        </p>
-        <Subscribe setSubscribed={setSubscribed} />
-      </div>
-      )}
+      <UpdateUI />
       <div className="flex flex-col space-y-2">
         <h1 className="text-white font-primary font-extrabold sm:text-xl md:text-2xl ">
           Want to Read more?
@@ -56,9 +85,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-
     </div>
-    
-    </div>
+   </div>
   );
 }

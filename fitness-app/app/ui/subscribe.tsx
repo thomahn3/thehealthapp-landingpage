@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from "react";
+import { useState, Dispatch, SetStateAction } from "react";
 import { z } from "zod";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
 const emailSchema = z.string().email();
 
-export default function Subscribe({ setSubscribed }: { setSubscribed: any }) {
+export default function Subscribe({ setSubscribe }: { setSubscribe: any}) {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
 
@@ -31,7 +31,7 @@ export default function Subscribe({ setSubscribed }: { setSubscribed: any }) {
         return;
       }
 
-      setSubscribed(true);
+      setSubscribe(false)
       setError('');
     } catch (err) {
       if (err instanceof z.ZodError) {
@@ -46,11 +46,11 @@ export default function Subscribe({ setSubscribed }: { setSubscribed: any }) {
   return (
     <div className="flex flex-col max-w-xl mx-auto justify-center">
         <form
-          className="font-secondary flex flex-shrink w-full px-2"
+          className="font-secondary flex flex-shrink w-full px-2 justify-center"
           onSubmit={handleSubmit}
         >
           <input
-            className="font-secondary px-1 border border-r-0 rounded-l-lg rounded-r-none w-2/3 focus:outline-none focus:ring-1 focus:ring-red-400"
+            className="font-secondary px-1 border border-r-0 rounded-l-lg rounded-r-0 w-2/3 focus:outline-none focus:ring-1 focus:ring-red-400"
             required
             placeholder="Your email here"
             onChange={(e) => setEmail(e.target.value)}
