@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
     images: [
       {
-        url: "https://thehealthapp.vercel.app/dashboard.png",
+        url: "https://thehealthapp.vercel.app/landing-page.png",
         width: 800,
         height: 450,
         alt: "Dashboard Interface on Mobile App"
