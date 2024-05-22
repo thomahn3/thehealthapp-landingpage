@@ -26,30 +26,30 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://thehealthapp.vercel.app/landing-page.png",
-        width: 800,
-        height: 450,
+        width: 450,
+        height: 800,
         alt: "Dashboard Interface on Mobile App"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
+    title: "The Health App | Landing Page",
     description:
-      "dminhvu.com - Programming blog for everyone to learn Elastic Stack, Next.js, Python, JavaScript, React, Machine Learning, Data Science, and more.",
-    creator: "@dminhvu02",
-    site: "@dminhvu02",
+      "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
+    creator: "@thomahn3",
+    site: "@thomahn3",
     images: [
       {
-        url: "https://dminhvu.com/images/home/thumbnail.png",
-        width: 1200,
-        height: 630,
-        alt: "dminhvu"
+        url: "https://thehealthapp.vercel.app/landing-page.png",
+        width: 450,
+        height: 800,
+        alt: "Dashboard Interface on Mobile App"
       }
     ]
   },
   alternates: {
-    canonical: "https://dminhvu.com"
+    canonical: "https://thehealthapp.vercel.app/"
   }
 };
 
