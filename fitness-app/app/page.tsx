@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     type: "website",
     title: "The Health App | Landing Page",
     description:
-      "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
+      "A health app to track all of your personal fitness needs from calorie intake to moods throughout your day.",
     images: [
       {
         url: "https://thehealthapp.vercel.app/landing-page.png",
         width: 450,
         height: 800,
-        alt: "Dashboard Interface on Mobile App"
+        alt: "Landing Page"
       }
     ]
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Health App | Landing Page",
     description:
-      "A health app to track all of your personal fitness needs from claorie intake to moods throughout your day.",
+      "A health app to track all of your personal fitness needs from calorie intake to moods throughout your day.",
     creator: "@thomahn3",
     site: "@thomahn3",
     images: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "https://thehealthapp.vercel.app/landing-page.png",
         width: 450,
         height: 800,
-        alt: "Dashboard Interface on Mobile App"
+        alt: "Landing Page"
       }
     ]
   },
