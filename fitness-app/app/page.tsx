@@ -25,10 +25,10 @@ export const metadata: Metadata = {
       "A health app to track all of your personal fitness needs from calorie intake to moods throughout your day.",
     images: [
       {
-        url: "https://thehealthapp.vercel.app/landing-page.png",
+        url: "https://thehealthapp.vercel.app/wireframes.png",
         width: 450,
         height: 800,
-        alt: "Landing Page"
+        alt: "wireframes"
       }
     ]
   },
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     site: "@thomahn3",
     images: [
       {
-        url: "https://thehealthapp.vercel.app/landing-page.png",
+        url: "https://thehealthapp.vercel.app/wireframes.png",
         width: 450,
         height: 800,
-        alt: "Landing Page"
+        alt: "wireframes"
       }
     ]
   },
