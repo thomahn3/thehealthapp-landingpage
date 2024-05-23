@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     ]
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "The Health App | Landing Page",
     description:
       "A health app to track all of your personal fitness needs from calorie intake to moods throughout your day.",
