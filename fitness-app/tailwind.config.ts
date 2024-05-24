@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         primary: ['Poppins'],
         secondary: ['Comfortaa'],
+        title: ['Raleway'],
       },
     },
   },
