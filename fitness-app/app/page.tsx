@@ -64,7 +64,7 @@ export const viewport: Viewport = {
 export default function Home() {
 
   return (
-   <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-screen w-screen sm:overflow-hidden'>
+   <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative sm:h-dvh md:h-screen w-screen sm:overflow-hidden'>
     <BackgroundImage />
     
     <div className="absolute flex justify-center items-center w-screen py-4">
