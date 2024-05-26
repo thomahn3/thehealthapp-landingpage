@@ -57,14 +57,14 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '38bdf8' },
-    { media: '(prefers-color-scheme: dark)', color: '#9333ea' },
+    { media: '(prefers-color-scheme: dark)', color: '#9333ea' }, //slate-900
   ],
 };
 
 export default function Home() {
 
   return (
-   <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-screen w-screen sm:overflow-hidden'>
+   <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-dvh w-screen sm:overflow-hidden'>
     <BackgroundImage />
     
     <div className="absolute flex justify-center items-center w-screen py-4">
