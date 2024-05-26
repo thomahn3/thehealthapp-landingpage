@@ -6,7 +6,7 @@ import BackgroundImage from "./ui/randomBackground";
 import UpdateUI from "./ui/updateUI";
 import { Metadata, Viewport } from "next";
 import '@/app/ui/globals.css'
-import { Analytics } from '@vercel/analytics/react';
+
  
 export const metadata: Metadata = {
   title: "The Health App | Landing Page",
@@ -66,7 +66,6 @@ export default function Home() {
 
   return (
    <div className='bg-gradient-to-tr from-sky-400 to-purple-600 relative h-dvh w-screen overflow-hidden touch-none'>
-    <Analytics />
     <BackgroundImage />
     
     <div className="absolute flex justify-center items-center w-screen py-4">

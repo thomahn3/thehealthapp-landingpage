@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "@/app/ui/globals.css";
 import type { Viewport, Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
  
 export const viewport: Viewport = {
   width: "device-width",
@@ -64,6 +65,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <main>
         {children}
+        <Analytics />
         </main>
         </body>
     </html>
