@@ -13,20 +13,19 @@ const strings = [
   'https://images.unsplash.com/photo-1440968872456-dec3196b9bee?q=80&w=2933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 ];
 
-  const getRandomString = () => {
-    const randomIndex = Math.floor(Math.random() * strings.length);
-    return strings[randomIndex];
-  };
-
   const [randomString, setRandomString] = React.useState<string>('');
 
   React.useEffect(() => {
+    const getRandomString = () => {
+      const randomIndex = Math.floor(Math.random() * strings.length);
+      return strings[randomIndex];
+    };
     setRandomString(getRandomString());
   }, [strings]);
 
 
   return (
-    <img src={randomString} className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50" />
+    <img src={randomString} className="absolute inset-0 w-full h-full object-cover mix-blend-multiply filter brightness-50" alt='Random fitness related image'/>
     );
 }
   
