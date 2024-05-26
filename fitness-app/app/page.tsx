@@ -77,7 +77,7 @@ export default function Home() {
           Want to Read more?
         </h1>
         <div className="flex flex-row justify-center space-x-8">
-          <a href="https://twitter.com/thomahn3">
+          <a href="https://twitter.com/thomahn3/status/1794685454148862462">
             <Image
             src={xlogo}
             alt='X (Twitter) Logo'
