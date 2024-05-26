@@ -1,11 +1,7 @@
 ## Landing page for a potential health centered app
 This is the [landing page](https://thehealthapp.vercel.app/) to collect potentially interested people for my mobile app to incorpate all the different disciplines of health apps into a centered app with an AI incorporation to analyse different trends, such as your mood is generally happier when you eat more protien, read and excersie.
 
-<<<<<<< Updated upstream
-<img class='justify-center' src='https://thehealthapp.vercel.app/landing-page.png'>
-=======
-<img class='justify-center w-fit' src='https://thehealthapp.vercel.app/landing-page.jpg'>
->>>>>>> Stashed changes
+<img class='justify-center' src='https://thehealthapp.vercel.app/landing-page.jpg'>
 
 
 ## The Health App
