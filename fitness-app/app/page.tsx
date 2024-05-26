@@ -4,7 +4,8 @@ import xlogo from '@/public/xlogo.svg'
 import redditlogo from '@/public/redditlogo.svg'
 import BackgroundImage from "./ui/randomBackground";
 import UpdateUI from "./ui/updateUI";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
+import '@/app/ui/globals.css'
  
 export const metadata: Metadata = {
   title: "The Health App | Landing Page",
@@ -51,6 +52,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://thehealthapp.vercel.app/"
   }
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '38bdf8' },
+    { media: '(prefers-color-scheme: dark)', color: '#9333ea' },
+  ],
 };
 
 export default function Home() {
