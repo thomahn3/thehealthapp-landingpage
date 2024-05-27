@@ -85,7 +85,7 @@ export default function Home() {
             width={32}
             />
           </a>
-          <a href="">
+          <a href="https://www.reddit.com/r/SideProject/comments/1d1ollf/a_personal_trainer_in_your_pocket/">
             <Image
               src={redditlogo}
               alt="Reddit Logo"
