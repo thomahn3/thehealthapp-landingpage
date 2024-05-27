@@ -27,4 +27,4 @@ If you have read this far I greatly appreciate it and ask that you subscribe to 
 <img class='justify-center' src='https://thehealthapp.vercel.app/wireframes.png'>
 
 ## Credits
-Thanks to [btahir's](https://github.com/btahir) [notion's capture](https://github.com/btahir/notion-capture/tree/main?tab=readme-ov-file) template that I saaw as insiration for capturing emails with NotionAPI. 
+Thanks to [btahir's](https://github.com/btahir) [notion's capture](https://github.com/btahir/notion-capture/tree/main?tab=readme-ov-file) template that I saw as inspiration for capturing emails with NotionAPI. 
